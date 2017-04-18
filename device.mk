@@ -11,9 +11,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
-
 # Include PSU if synced
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
 
@@ -186,3 +183,6 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor \
     libhidltransport
+
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
