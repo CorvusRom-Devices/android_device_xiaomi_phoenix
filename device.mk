@@ -73,6 +73,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
+# Charging
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
