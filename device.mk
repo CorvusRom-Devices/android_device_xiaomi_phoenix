@@ -14,9 +14,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
-# MIUICamera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
-
 # Include PSU if synced
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
 
@@ -69,8 +66,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Camera
-#PRODUCT_PACKAGES += \
-#    GCamGOPrebuilt
+PRODUCT_PACKAGES += \
+    Snap
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
