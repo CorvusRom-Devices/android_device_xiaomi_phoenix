@@ -103,7 +103,7 @@ void vendor_load_properties() {
     }
 
     property_override("ro.oem_unlock_supported", "0");
-    property_override("ro.build.description", "redfin-user 11 RQ1A.210205.004 7038034 release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ2A.210305.006 7119741 release-keys");
     property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
-	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys");
+	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys");
 }
