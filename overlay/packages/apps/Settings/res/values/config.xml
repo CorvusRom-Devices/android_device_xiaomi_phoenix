@@ -19,4 +19,6 @@
     -->
     <integer name="config_fingerprintSensorLocation">3</integer>
 
+    <!-- Smart charging -->
+    <bool name="config_supportSmartCharging">true</bool>
 </resources>
